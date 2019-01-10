@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+/************************************************************************************NAVIGATION************************************************************/
+.socialIcon {
+    
+    padding: 0px;
+    margin: 0px;
+    top: 15px;
+}
+.menu {
+    font-size: 40px;
+    
+}
+
+.navbar-brand {
+	font-size: 34px;
+	color: aliceblue;
+}
+.title p{
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+}
+.navbar.navbar-expand-lg.navbar{
+    height: 80px;
+	background-color: #a3823f;
+}
+
+/**********************************************************************************JUMBOTRON************************************************************/
+.jumbotron {
+    background-color: #0F0A0A;
+    height: 300px;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 23px;
+}
+.jumbo {
+	height: 150px;
+}
+.name {
+	font-size: 45px;
+	margin-bottom: 50px;
+}
+.row .col-12 p {
+    margin: 5px 0px;
+    font-size: 18px;
+}
+/*Scroll Down Button*/
+.col-12 p .btn {
+    margin-top: 50px;
+}
+/**********************************************************************************MAIN-SECTION ONE---INTRO************************************************************/
+
+
+.card .card-body p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 28px;
+}
+#intro .card {
+    border: medium;
+    margin-top: 30px;
+    -webkit-box-shadow: 0 1px 7px 3px #A6A5A5;
+    box-shadow: 0 1px 7px 3px #A6A5A5;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+/**********************************************************************************MAIN-SECTION ONE************************************************************/
+.latestWork {
+    margin-top: 120px;
+}
+.col-12.text-center {
+	margin-bottom: 50px;
+}
+
+.latest {
+	box-shadow: 1px 1px 7px 3px #A6A5A5;
+	padding-left: 0px;
+}
+
+.description {
+	-webkit-box-shadow: inset;
+    text-shadow: 0px 2px 1px #A6A5A5;
+	box-shadow: 0 1px 7px 3px #A6A5A5;
+}
+
+.project {
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+
+
+.title {
+    background-color: #a3823f;
+}
+.navbar.navbar-expand-lg.text-light.title {
+    height: 30px;
+}
+
+
+
+#mainBody {
+	background-image: url("../images/Abstract Gold Geometric.jpg");
+	background-attachment: fixed;
+	background-size: contain;
+}
+
+.description {
+	background-image: url("../images/Abstract Gold Geometric.jpg");
+	background-attachment: fixed;
+	background-size: contain;
+	
+}
+
+.latestTitle h2{
+	font-size: 45px;
+}
+.navbar-nav   {
+    /* [disabled]position: relative; */
+    /* [disabled]left: 820px; */
+    /* [disabled]top: 20px; */
+}
+.navbar.navbar-expand-lg.navbar #navbarSupportedContent {
+    justify-content: flex-end;
+}
+
+@media (device-width:768px){
+}
