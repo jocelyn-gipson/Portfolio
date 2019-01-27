@@ -5,44 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jocelyn Gipson</title>
-    <!-- Bootstrap -->
-	<link href="css/stylesheet.css" rel="alternate stylesheet">
-    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/css/mdb.min.css" rel="stylesheet">
+<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.1/js/mdb.min.js"></script>
 	<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar">
-      <a class="navbar-brand" href="index.html">Jocelyn Gipson</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand nav-item active" href="#">Jocelyn Gipson<span class="sr-only">(current)</span></a>
+		<!-- Collapse button -->
+      <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="animated-icon3"><span></span><span></span><span></span></div>
+  </button>
+		<!-- Collapsible content -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="nav justify-content-end">
-			<li class="nav-item dropdown menu">
+		  
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Holiday.com</a>
+              <a class="dropdown-item" href="#">Nebula Descendants</a>
+              <a class="dropdown-item" href="#">BBC Re-vamp</a>
+              <a class="dropdown-item" href="#">Adobe Portfolio</a>
             </div>
           </li>
-          <li class="nav-item socialIcon">
-            <a class="nav-link" href="http://www.jocelyn-gipson/in/linkedin.com"><span style="color: aliceblue"><i class="fab fa-linkedin fa-2x"></i></span></a>
+			<li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jocelyn-gipson"><i class="fab fa-linkedin fa-2x"></i></a>
           </li>
-          <li>&nbsp;</li>
-          <li class="nav-item socialIcon"> <a class="nav-link" href="https://www.behance.net/jgipson83f1"><span style="color: aliceblue"><i class="fab fa-behance-square fa-2x"></i></span></a> </li>
-		  <li class="nav-item socialIcon">
-            <a class="nav-link" href="http://www.github.com/jocelyn-gipson"><span style="color: aliceblue"><i class="fab fa-github-square fa-2x"></i></span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.behance.net/jgipson83f1"><i class="fab fa-behance-square fa-2x"></i></a>
+          </li>
+			<li class="nav-item">
+            <a class="nav-link" href="http://www.github.com/jocelyn-gipson"><i class="fab fa-github-square fa-2x"></i></a>
           </li>
         </ul>
       </div>
     </nav>
 	 <!--nav class="navbar navbar-expand-lg navbar-dark bg-dark"-->
-	  <nav class="navbar navbar-expand-lg text-light  title"><p>Web Designer &amp; Developer</p>
+	  <nav class="navbar navbar-expand-lg text-light title" id="menu"><p>Web Designer &amp; Developer</p>
 		</nav>
 	  <!--/nav-->
     <section>
@@ -51,7 +60,7 @@
           <div class="row">
             <div class="col-12">
               <h1><img src="images/text-animation-creative-3.9s-693x100px.gif" alt="animated creative" class="img-fluid"></h1>
-              <p><a class="btn" href="#mainBody" role="button"><i class="fas fa-angle-double-down fa-2x btn-info bg-transparent"></i></a></p>
+              <p><a class="btn" href="#work" role="button"><i class="fas fa-angle-double-down fa-2x"></i></a></p>
             </div>
           </div>
         </div>
@@ -63,117 +72,140 @@
           <div class="card">
 			<div class="card-body">
 				<hr>
-            <p class="text-center">Jocelyn specializes in reponsive sites, built on user based design. From web design to interface, advertisement to content Jocelyn Gipson is the solution to your business challenges. Ready &amp; able to help you advance your web culture.</p>
+            <p class="text-center">Specializing in user based, reponsive, mobile-first design and development. From web to interface design, advertisement to content, Jocelyn Gipson is the solution to your business challenges. Ready &amp; able to help you advance your web culture.</p>
 				<hr>
 		  	</div>
 		  </div>
           </div>
         </div>
     </section>
-    <section>
-      <div class="container latestWork">
-        <div class="row latestTitle">
-          <div class="col-12 text-center">
-            <h2>Latest Work</h2>
-			 <hr style="width: 680px">
+    <section class="stuff" id="work">
+	  <div class="row project justify-content-center">
+      	<div class="col-5 text-center sectionHeader">
+			<div class="card description">
+        <h2>Latest Work</h2>
           </div>
         </div>
-		 <div class="row project">
-			 <div class="col-md-12 text-center sectionHeader">
-				 <div class="card description">
-			<h4>Holiday.com</h4>
-			<h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+		</div> 
+	
+	<div class="row sectionHeader">
+		<div class="col-md-7">
+			<div class="card test">
+				<img src="images/webSiteHeader.png" alt="web site header" height="400" class="img-fluid">
 			</div>
-			 </div>
-		  </div>
-		  
-        <div class="row">
-			<div class="col-text-center">
+		</div>
+		<div class="col-md-5">
+			<div class="card figure-caption">
+			<h2 class="text-center">Holiday.com</h2>
+			<br>
+			<center><a href="http://xd.adobe.com/view/b505d92d-92c0-450d-69b3-66707e32be29-c334/?fullscreen"><button type="button" class="btn btn">View Interactive Prototype</button></a></center>
+				
+			<p>Responsive, cross-browser capadible, eCommerce Website. Intuitive user experiance and interaction design, allows for easy use and navigation. <br></p>
 			</div>
-          <div class="col-md-6 col-12 text-center">
-			<div class="card latest">
-			
-            <img class="img-fluid" src="images/webSite.png" alt="">
-          	</div>
+		</div>
+	</div>
+	<div class="row sectionHeader">
+		<div class="col-md-5">
+			<div class="card figure-caption one">
+				<center><h2>Holiday.com<br>Landing Page</h2></center>
 			</div>
-          <div class="col-md-6 col-12 text-center">
-			<div class="card latest">
-			<img src="images/shoppingCart.png" alt="holiday.com shopping cart" class="img-fluid">
-          </div>
-        </div>
-			<div class="row mt-2">
-			<div class="col-md-6"><h4 class="emailSig text-center">HTML Email Signatures</h4></div>
-			<div class="col-md-6"><h4 class="contentAndAds text-center">Content &amp; Advertisement</h4></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img src="images/200x200.gif" alt="" class="img-fluid float-md-right"></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt="">
-			  </div>
+		</div>
+		<div class="col-md-7">
+			<div class="card test">
+				<img src="images/webSiteSection.png" alt="web site header" height="400" class="img-fluid">
+			</div>
+		</div>
+	</div>
+	<div class="row sectionHeader">
+		<div class="col-md-7">
+			<div class="card test">
+				<img src="images/shoppingCartWEB.png" alt="web site header" height="400" class="img-fluid">
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div class="card figure-caption one">
+			<center><h2>Holiday.com<br>Shopping Cart</h2></center>
+			</div>
+		</div>
+	</div><br><br><br><br>
 		
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-        </div>
-		  <div class="row mt-2">
-			  <div class="col-md-6 text-center"><h6 class="text-center">Responsive, business or personal email signatures add a professional and comprehensive feel to any business correspondence. Customized signatures with logo, images, and social media links. </h6></div>
-			  <div class="col-md-6"></div>
-		  </div>
-        <hr>
+		
+	</section>
+	<hr>
+	  
+	  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="images/emailSig1.3.png" alt="" width="2000" class="cards img-fluid"/></a>
+      <h4>HTML Email Signatures</h4>
+      <p class="text_column">Responsive, business or personal email signatures add a professional and comprehensive feel to any business correspondence. Signatures can be customized with logo, images, and social media links.</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/emailSig4.png" alt="" width="2000" class="cards img-fluid"/></a>
+      <h4>HTML Email Signatures</h4>
+      <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/HolidayAdPort.png" alt="" width="1700" class="cards img-fluid"/></a>
+      <h4>Content &amp; Advertisement</h4>
+      <p class="text_column">Advertisements created in Adobe CC.<br> Banners, email ads, and more for any business.</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="images/xmasAdCollage.psd.png" alt="" width="2000" class="cards img-fluid"/></a>
+      <h4>Content &amp; Advertisement</h4>
+      <p class="text_column">Advertisements created in Adobe CC.<br> Banners, email ads, and more for any business.</p>
+    </div>
+	</div>
+	  
+  <div class="row mosiac justify-content-center"> 
+	  <div class="col-10 card savvy"><center><h2>Savvy Life</h2></center><br>
+		  <p>The target user for this project were 10-12 year olds. The function of the interace and appearance for this project was completely based on research of the user. Research showed that children of that age were easily distracted and like to play and learn in short burst. Research also chowed that the target user enhoyed competetion with their learning to boost confidence and retention of concepts.</p>
+	  </div>
+
+  <div class="column mosaic">
+    <img src="images/board_finish.png" width="500" class="img-fluid" alt="Savvy life game board">
+	<img src="images/SavvyMockUpMacBook.png" width="260" height="350" class="img-fluid" alt="Savvy Life Mac Book Mock-Up">
+    <img src="images/iPadsavvyLife.png" width="400" height="400" class="img-fluid" alt="Savvy Life iPad">
+	  
+  </div>
+  <div class="column mosaic">
+	<img src="images/board_finish-Recovered.png" width="400" height="400" class="img-fluid" alt="Savvy life game board">
+	<img src="images/SavvyMockUpMacBook.png" width="250" alt="Savvy Life Mac Book Mock-Up">
+	<img src="images/marley persona.png" width="500" class="img-fluid" alt="10yr old User Persona">
+	  
+  </div>
+	 </div> 
+	  	<hr>
+	 <div class="section footerSection">
+	<a href="#menu" role="button"><i class="fa fa-arrow-circle-up arrow-circle-up fa-3x"></i></a>
+		<hr>
+      <div class="container footer">
         <div class="row">
-          <div class="col-md-3 col-6"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-right" src="images/200x200.gif" alt=""></div>
-          <div class="col-md-3 col-6 mt-md-0 mt-1"><img class="img-fluid float-left" src="images/200x200.gif" alt=""></div>
-        </div>
-      </div>
-    </section>
-    <hr>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magni, doloribus, possimus eum sapiente deleniti doloremque fugit ut expedita molestiae iusto debitis eveniet modi obcaecati ipsam quos quis labore dicta.</p>
-            <button type="button" class="btn btn-success">Get in touch</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">WHO WE ARE</h3>
+          <div class="col-md-6 col-12">
+            <h3 class="text-center footerHeader">WHO IS JOCELYN?</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ducimus, sit, quibusdam quidem recusandae veniam eos quod error nisi repellat excepturi laboriosam aspernatur suscipit possimus consectetur dolores nihil labore quas eius illo accusamus nulla sed blanditiis porro accusantium. Perspiciatis, perferendis!</p>
           </div>
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">GET IN TOUCH</h3>
+          <div class="col-md-6 col-12">
+            <h3 class="text-center footerHeader">GET IN TOUCH</h3>
             <address class="text-center">
-              <strong>MyCompany, Inc.</strong><br>
-              Sunny Autumn Plaza, Grand Coulee,<br>
-              CA, 91308-4075, US<br>
-              <abbr title="Phone">P:</abbr> (123) 456-7890
+              <strong>Jocelyn Gipson</strong><br>
+              Chicago, Il US<br>
+			<abbr title="Phone"><i class="fa-phone fa"></i></abbr> (678) 353-1529<br>
+				<abbr title="Email"></abbr> jdara.gipson@gmail.com
             </address>
-          </div>
-          <div class="col-md-4 col-12">
-            <h3 class="text-center">NEWSLETTER</h3>
-            <form>
-              <div class="form-group col-12">
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                <button type="submit" class="btn btn-dark mt-2">Subscribe</button>
-              </div>
-            </form>
+			  <center>
+			  <a href="http://www.linkedin.com/in/jocelyn-gipson"><i class="fab fa-linkedin fa-3x"></i></a>
+			  <a href="https://www.behance.net/jgipson83f1"><i class="fab fa-behance-square fa-3x"></i></a>
+			  <a href="https://github.com/jocelyn-gipson"><i class="fab fa-github-square fa-3x"></i></a>
+			  </center>
           </div>
         </div>
       </div>
     </div>
-    <hr>
-    <footer class="text-center">
+    <footer class="text-center footerFooter">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <p>Copyright © MyCompany. All rights reserved.</p>
+            <p>Copyright © Jocelyn Gipson. All rights reserved.</p>
           </div>
         </div>
       </div>
+		<hr>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.1.min.js"></script>

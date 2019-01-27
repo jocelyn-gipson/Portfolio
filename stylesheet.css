@@ -1,31 +1,130 @@
 @charset "utf-8";
 /* CSS Document */
+
+body{
+	margin: 0px 50px 0px 50px;
+}
 /************************************************************************************NAVIGATION************************************************************/
-.socialIcon {
-    
-    padding: 0px;
-    margin: 0px;
-    top: 15px;
+.nav-item a{
+	color: #ffffff;
 }
-.menu {
-    font-size: 40px;
-    
+.navbar-nav .nav-item.dropdown #navbarDropdown {
+    color: #ffffff;
+    font-size: 22px;
 }
-
-.navbar-brand {
-	font-size: 34px;
-	color: aliceblue;
+.navbar.navbar-expand-lg {
+    background-color: #a3823f;
+    margin-bottom: auto;
+    height: 60px;
 }
-.title p{
+.navbar.navbar-expand-lg.text-light.title {
+    height: 30px;
     position: relative;
-    left: 30px;
-    bottom: 10px;
+    bottom: 5px;
 }
-.navbar.navbar-expand-lg.navbar{
-    height: 80px;
-	background-color: #a3823f;
+.navbar-collapse {
+    justify-content: flex-end;
+    color: #ffffff;
+}
+.navbar-brand {
+    color: #FFFFFF;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+.navbar-brand a:hover {
+    color: #474239;
 }
 
+.navbar-nav {
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+.navbar-nav .nav-item li a {
+    text-decoration: none;
+}
+
+.animated-icon3 {
+	width: 30px;
+	height: 20px;
+	position: relative;
+	margin: 0px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+.animated-icon3 span{
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+.animated-icon3 span {
+	background: #f3e5f5;
+}
+	.animated-icon3 span:nth-child(1) {
+	top: 0px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(2) {
+	top: 10px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(3) {
+	top: 20px;
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+	-o-transform-origin: left center;
+	transform-origin: left center;
+}
+
+.animated-icon3.open span:nth-child(1) {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 0px;
+	left: 8px;
+}
+
+.animated-icon3.open span:nth-child(2) {
+	width: 0%;
+	opacity: 0;
+}
+
+.animated-icon3.open span:nth-child(3) {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 21px;
+	left: 8px;
+}
 /**********************************************************************************JUMBOTRON************************************************************/
 .jumbotron {
     background-color: #0F0A0A;
@@ -47,11 +146,14 @@
 }
 /*Scroll Down Button*/
 .col-12 p .btn {
-    margin-top: 50px;
+    /* [disabled]margin-top: 50px; */
+    position: relative;
+    top: 20px;
 }
-/**********************************************************************************MAIN-SECTION ONE---INTRO************************************************************/
-
-
+/**********************************************************************************MAIN-SECTION ONE INTRO***************************************************/
+.container #intro .card {
+    border: thin solid #d8b868;
+}
 .card .card-body p {
     font-size: 18px;
     letter-spacing: 1px;
@@ -60,72 +162,441 @@
 }
 #intro .card {
     border: medium;
-    margin-top: 30px;
     -webkit-box-shadow: 0 1px 7px 3px #A6A5A5;
     box-shadow: 0 1px 7px 3px #A6A5A5;
+    margin-top: 30px;
     margin-right: 40px;
     margin-left: 40px;
     margin-bottom: 30px;
+    color: #796130;
 }
-/**********************************************************************************MAIN-SECTION ONE************************************************************/
+/**********************************************************************************GALLERY START**********************************************/
+
+/* About Section */
+.text_column {
+	width: 90%;
+	text-align: left;
+	font-weight: lighter;
+	line-height: 25px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #FFFFFF;
+	/* [disabled]min-width: 400px;
+*/
+	padding-bottom: 25px;
+	padding-top: 0px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.thumbnail {
+    width: 23%;
+    text-align: center;
+    float: left;
+    margin-top: 25px;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 3px;
+    border-bottom: 4px solid #d8b868;
+	box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.gallery .thumbnail h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #d8b868;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 400;
+}
+.gallery .thumbnail p {
+	margin: 0;
+	color: #B3B3B3;
+	text-align: left;
+	padding-left: 20px;
+}
+.gallery .thumbnail .tag {
+    text-align: left;
+}
+
+/* More info */
+.intro {
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+}
+.column {
+	width: 50%;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+}
+.intro .column h3 {
+	color: #FFFFFF;
+	text-align: center;
+}
+.intro .column p {
+	color: #FFFFFF;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	max-height: 200px;
+	opacity: 0.8;
+}
+.intro .column p {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+	line-height: 25px;
+	font-weight: lighter;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 80%;
+	margin-top: 4%;
+}
+.button {
+	width: 200px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #FFFFFF;
+	color: #FFFFFF;
+	transition: all 0.3s linear;
+}
+.button:hover {
+	background-color: #6DC7D0;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.intro {
+	display: inline-block;
+	background-color: #6DC7D0;
+}
+.profile {
+	width: 50%;
+}
+.gallery .thumbnail .tag {
+	color: #5D5E5D;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Mobile */
+@media (max-width: 320px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding: 0;
+}
+.intro .column p {
+	width: 80%;
+	margin-left: 0px;
+}
+.text_column {
+	padding-left: 20px;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+}
+
+/* Small Tablets */
+@media (min-width: 321px)and (max-width: 767px) {
+.logo {
+	width: 100%;
+	text-align: center;
+	margin-top: 13px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.text_column {
+	width: 100%;
+	text-align: left;
+	padding: 0;
+}
+.thumbnail {
+	width: 100%;
+}
+.column {
+	width: 100%;
+	margin-top: 0px;
+}
+.thumbnail {
+	width: 100%;
+}
+.text_column {
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 90%;
+}
+.column {
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.profile {
+	width: 100%;
+}
+.intro .column p {
+	width: 90%;
+	text-align: center;
+	padding-left: 0px;
+}
+}
+
+/* Small Desktops */
+@media (min-width: 768px) and (max-width: 1096px) {
+.text_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 48%;
+}
+.text_column {
+	width: 90%;
+	margin: 0;
+	padding: 20px;
+}
+.intro .column p {
+	width: 80%;
+}
+}
+/**********************************************************************************GALLERY END**********************************************/
+.sectionLatest {
+	margin-bottom: 90px;
+	border: thin solid #d8b868;
+	 -webkit-box-shadow: 0 1px 5px 3px #A6A5A5;
+    box-shadow: 0 1px 5px 3px #d8b868;
+}
 .latestWork {
     margin-top: 120px;
 }
-.col-12.text-center {
-	margin-bottom: 50px;
-}
-
 .latest {
-	box-shadow: 1px 1px 7px 3px #A6A5A5;
+	margin: 25px 0px;
+	box-shadow: 0px 0px 4px 1px #A6A5A5;
 	padding-left: 0px;
 }
 
 .description {
-	-webkit-box-shadow: inset;
-    text-shadow: 0px 2px 1px #A6A5A5;
-	box-shadow: 0 1px 7px 3px #A6A5A5;
+	border: thin solid #d8b868;
+    -webkit-box-shadow: inset;
+    box-shadow: 0 1px 7px 3px #A6A5A5;
+    padding-top: px;
+	height: 35px;
+	letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 28px;
+	background-image: url("../images/Abstract Gold Geometric.jpg");
+	background-attachment: fixed;
+	background-size: contain;
+
+}
+.btn-outline-light {
+    padding: 8px;
+    font-size: 14px;
+    border: thin solid #A3823C;
+	margin-bottom: 30px;
+}
+center a .btn.btn {
+    border: thin solid #A3823F;
+    padding: 10px;
+    background-color: #a3823f;
+    margin-bottom: 20px;
+}
+.btn-outline-light a:link {
+    border: thin  #a3823f;
+    color: #a3823f;
+}
+.card.description center a {
+    color: #d8b868;
 }
 
 .project {
-    margin-bottom: 30px;
-    margin-top: 60px;
+	margin-top: 50px;
+	
 }
-
-
-
 .title {
     background-color: #a3823f;
+    word-spacing: 1px;
+    letter-spacing: 2px;
 }
-.navbar.navbar-expand-lg.text-light.title {
-    height: 30px;
-}
-
-
 
 #mainBody {
 	background-image: url("../images/Abstract Gold Geometric.jpg");
 	background-attachment: fixed;
 	background-size: contain;
 }
+.row.additional .col-12.text-center.additional h1 {
+    margin-top: 30px;
+}
+.holiday {
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
 
-.description {
-	background-image: url("../images/Abstract Gold Geometric.jpg");
-	background-attachment: fixed;
-	background-size: contain;
+
+.section2 {
+	border: thin solid #a3823c;
+    -webkit-box-shadow: inset;
+    box-shadow: 0 1px 7px 3px #A6A5A5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.test {
+	padding: 10px;
 	
 }
 
-.latestTitle h2{
-	font-size: 45px;
+.figure-caption {
+    padding: 20px 13px;
+    position: relative;
+    top: 45px;
+    font-size: 16px;
+    border: thin solid #d8b868;
+	
 }
-.navbar-nav   {
-    /* [disabled]position: relative; */
-    /* [disabled]left: 820px; */
-    /* [disabled]top: 20px; */
+.section {
+	margin-top: 40px;
 }
-.navbar.navbar-expand-lg.navbar #navbarSupportedContent {
-    justify-content: flex-end;
+.sectionHeader {
+	margin-top: 60px;
+}
+.figure-caption.one {
+    padding-top: 30px;
+    color: #d8b868;
+}
+.card-header {
+    -webkit-box-shadow: 0 1px 7px 3px #A6A5A5;
+    box-shadow: 0 1px 7px 3px #A6A5A5;
+    background-image: url("../images/Abstract Gold Geometric.jpg");
+    background-size: contain;
+    background-attachment: inherit;
+    opacity: 0.9;
+    padding: 3px;
+    margin: 0px 10px;
 }
 
-@media (device-width:768px){
+/*****************************************************SAVVY MOSIAC**************************************/
+.row.mosiac {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 0px;
+	margin-left: 0px;
+}
+.card.savvy {
+	margin: 20px 0px;
+	padding: 10px 20px;
+	color: #796130;
+}
+/* Create four equal columns that sits next to each other */
+.column.mosiac {
+  flex: 15%;
+  max-width: 15%;
+}
+
+.column.mosiac img {
+  margin-top: 0px;
+  vertical-align: middle;}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column.mosiac {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.mosiac{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/**********************************************************************************FOOTER**********************************************/
+.arrow-circle-up {/*Scroll Up*/
+	float: right;
+	color: #a3823f;
+	position: relative;
+	bottom: 70px;
+	opacity: 0.9px;
+}
+.footerSection {
+	margin-top: 300px;
+	height: 330px;
+	background-image: url("../images/Abstract Gold Geometric.jpg");
+	background-attachment: fixed;
+	background-size: contain;
+}
+.footer {
+	margin-top: 80px;
+}
+.footerFooter {
+	margin-bottom: 80px;
+	background-image: url("../images/Abstract Gold Geometric.jpg");
+	background-attachment: fixed;
+	background-size: contain;
+}
+center a .fab.fa-linkedin.fa-3x {
+    color: #A38243;
+}
+center a .fab {
+    margin: 0px 5px;
+}
+p .btn .fas.fa-angle-double-down.fa-2x {
+    color: #a3823f;
+}
+
+center a .fab.fa-github-square.fa-3x {
+    color: #a3823f;
+}
+center a .fab.fa-behance-square.fa-3x {
+    color: #a38243;
+}
+.title p {
+    position: relative;
+    left: 7px;
 }
