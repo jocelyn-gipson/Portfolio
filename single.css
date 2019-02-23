@@ -33,9 +33,18 @@ body{
   .navbar-default .navbar-toggle {
     border-color: transparent;
     color: #fff !important;
+    height: 60px;
   }
 .navbar-brand {
 	font-size: 22px;
+  position: absolute;
+  left: 80px;
+  bottom: 45px;
+}
+.navbar-brand img{
+  position: relative;
+  top: 32.5px;
+  right: 65px;
 }
 h2 {
     font-size: 24px;
@@ -53,7 +62,7 @@ h2 {
     color: #303030;
     font-weight: 400;
     margin-bottom: 30px;
-	letter-spacing: 1px;
+	 letter-spacing: 1px;
   }
 /************************************************************************************JUMBOTRON************************************************************/
 
@@ -65,15 +74,15 @@ h2 {
   }
 p .btn {
     position: relative;
-    top: 30px;
-	color:#A3823F; 
+  top: 30px;
+	 color:#A3823F; 
 }
 .container-fluid {
     padding: 20px 50px;
   }
 .bg-grey {
-    background-color: #f0ece4;
-	opacity: 0.9;
+   /* background-color: #f0ece4;*/
+	background-image: url("../images/uxMeeting.jpg");
 	border-radius: 10px;
   }
   .logo-small {
@@ -154,7 +163,7 @@ img.screenshot {
 
 .card-img-overlay {
 	position: relative;
-	bottom: 105px;
+	bottom: 90px;
 	padding: 0px;
 	margin: 0px;
 }
@@ -186,6 +195,10 @@ img.screenshot {
 	letter-spacing: 1px;
 	line-height: 25px;
 	color: #ffffff;
+}
+.resume{
+  text-decoration: none;
+  color: #a3823f;
 }
 /**************************************************************CONTACT*/
 
@@ -225,20 +238,26 @@ a span .fas.fa-angle-double-up.fa-2x {
 
 .social {
 	float: right;
+  position: relative;
+  left: 55px;
 }
 .fab {
-    color: #a3823f;
+  /*color: #a3823f;*/
+  color: #000000;
+  opacity: 0.8;
 	margin-left: 20px;
+  padding-top: 50px;
+
 }
 .copyright {
 	font-size: 20px;
 	
 }
-footer.container-fluid.text-center {
+footer.container-fluid{
 	height: 280px;
 }
 .footer-text {
-    padding-top: 110px;
+  padding-top: 50px;
 	background-color: white;
 	height: 165px;
 }
@@ -258,10 +277,7 @@ footer.container-fluid.text-center {
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
-.container-fluid.bg-grey .text-right strong {
 
-
-}
 
 
 
@@ -385,11 +401,18 @@ footer.container-fluid.text-center {
 
 
 #contact {
-	background-image: url("../images/Abstract Gold Geometric.jpg");
+	background-image: url("/images/Abstract Gold Geometric.jpg");
 	background-attachment: fixed;
 	background-size: contain;
 }
 
 #services {
 	margin-bottom: 180px;
+}
+
+
+
+.SDLC {
+	position: relative;
+	right: 15px;
 }
